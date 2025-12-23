@@ -31,8 +31,7 @@ def lambda_handler(event, context):
     input_df = wr.s3.read_csv([input_path])
 
     current_databases = wr.catalog.databases()
-    wr.catalog.databases()
-    
+
     if db_name not in current_databases.values:
         print(f'- Database {db_name} does not exist.')
         print('Creating Database..')
