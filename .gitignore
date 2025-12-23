@@ -1,0 +1,75 @@
+# -------------------
+# PYTHON ENVIRONMENTS
+# -------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# venvs
+venv/
+.venv/
+env/
+.env/
+
+# builds
+build/
+dist/
+*.egg-info/
+
+# -------------------
+# DATASETS
+# -------------------
+*.csv
+*.tsv
+*.json
+*.parquet
+*.avro
+*.orc
+*.xlsx
+*.sql.db
+*.sqlite
+
+# EXCEPTION: Allow sample data for portfolio demonstration
+# This allows files inside data/sample/ to be tracked
+!data/sample/*.csv
+!data/sample/*.json
+
+# -------------------
+# JUPYTER NOTEBOOKS
+# -------------------
+# Automatic checkpoints
+.ipynb_checkpoints/
+
+# -------------------
+# IDEs & EDITORS
+# -------------------
+# Local configurations for VS Code, PyCharm, etc.
+.vscode/
+.idea/
+*.swp
+
+# -------------------
+# SECURITY & CREDENTIALS (CRITICAL)
+# -------------------
+# Local environment variables
+.env
+.env.local
+.env.test
+
+# Configuration files that might contain passwords or keys
+config.yaml
+secrets.json
+aws_credentials.txt
+credentials.json
+
+# -------------------
+# OPERATING SYSTEM
+# -------------------
+.DS_Store
+Thumbs.db
+
+# -------------------
+# LOGS
+# -------------------
+*.log
+logs/
